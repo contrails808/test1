@@ -1,0 +1,382 @@
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Michroma&family=Noto+Sans+KR:wght@100..900&display=swap');
+</style>
+
+
+.body {
+    background-image: url(img/bgGrid.jpg)
+    background-repeat: repeat;
+}
+
+
+
+.menuBar {
+    width: 100%;
+    height: 90px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: solid 3px #000;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menuBar h2{
+    margin-left: 30px;
+    font-size:35px;
+}
+
+.nav-links {
+    list-style-type: none;
+    display: flex;
+    margin: 20px; /* 기본적인 마진을 제거합니다. */
+    padding: 0; /* 기본적인 패딩을 제거합니다. */
+    font-size:30px;
+}
+
+.nav-links li {
+    margin-right: 10px;
+}
+
+.nav-links a {
+    color: #000;
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+}
+
+.nav-links a:hover {
+    color: #20E100;
+    background-color: #dddddd00;
+}
+
+.section {
+    width: 90%;
+    margin: 30px 75px;
+    display: flex;
+}
+
+#home {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.title {
+    margin: 75px;
+   color: #000000;
+   font-size: 80px;
+   margin-bottom: 20px; /* h2 요소의 아래쪽 마진을 추가하여 간격을 조정합니다. */
+   font-family: "Michroma", sans-serif;
+   text-underline-position: auto;
+}
+
+.sub_title {
+   font-size: 40px;
+   margin-top: 0px;
+   margin-bottom: 0px;
+   margin: 75px;
+   font-family: 'Noto Sans KR', sans-serif;
+   font-weight: bold;
+}
+
+.newssub{
+    font-size: 50px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin: 0px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: bold;
+}
+
+
+hr{
+    width: auto;
+    height: 2px;
+    background-color: #000000;
+}
+
+.content {
+    top: 300px;
+}
+
+.text {
+    max-width: 90%; /* 최대 너비를 66%로 설정하여 가로 길이를 제한합니다. */
+    margin-right: auto; /* 오른쪽 여백을 자동으로 조정하여 가운데 정렬합니다. */
+    font-size: 30px; /* 원하는 글꼴 크기로 조정합니다. */
+    line-height: 1.6; /* 줄 간격을 조정하여 가독성을 높입니다. */
+    margin-bottom: 200px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.text5 {
+    max-width: 90%; /* 최대 너비를 66%로 설정하여 가로 길이를 제한합니다. */
+    margin-right: auto; /* 오른쪽 여백을 자동으로 조정하여 가운데 정렬합니다. */
+    font-size: 30px; /* 원하는 글꼴 크기로 조정합니다. */
+    line-height: 1.6; /* 줄 간격을 조정하여 가독성을 높입니다. */
+    margin-bottom: 100px;
+    font-family: 'Noto Sans KR', sans-serif;
+    
+}
+
+.img1{
+    margin-top: 0;
+    width: 1700px;
+    height: 1000px;
+}
+
+.s3_img {
+    margin: 0px;
+    width: 1700px;
+    height: 1000px;
+    display: flex; /* Flexbox를 사용하여 이미지들을 가로로 배치 */
+    gap: 20px; /* 이미지들 간의 간격 */
+    justify-content: space-around; /* 이미지들을 가운데 정렬하고 주위에 공간을 분배 */
+    left: 0px;
+}
+
+.s3_img img {
+    margin: 0%;
+    max-width: 30%; /* 이미지의 최대 너비 설정 */
+    height: auto; /* 높이 자동으로 조정 */
+}
+
+
+footer {
+    background-color: #f0f0f000;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contact-info, .social-links {
+    flex: 2;
+    text-align: left;
+}
+
+.social-links ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: left;
+    font-family: 'Noto Sans KR';
+    font-size: 25pt;
+}
+
+.social-links ul li {
+    font-size: 10pt;
+    display: inline;
+    margin-right: 10px;
+}
+
+.footer-divider {
+    border: none;
+    height: 30px; /* 선의 두께 설정 */
+    background-color: #00FF00; /* 초록색 배경색 설정 */
+    margin: 0; /* 위아래 여백 설정 */
+}
+
+
+.image-container {
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+
+.col8{width: calc(66.66% - 30px); margin: 0px 15px;
+outline: auto;
+outline-style:groove;
+}
+
+.col4
+{width: calc(33.33% - 30px); 
+margin: 0px 15px;
+background-color: white;
+outline: auto;
+outline-style: groove;
+outline-color: black;
+}
+
+.col9{width: calc(90% - 30px); margin: 0px 15px;
+    outline: auto;
+    outline-style:groove;
+    }
+
+.col10{width: calc(100% - 30px); margin: 0px 15px;
+    height: 400px;
+    width: 700px;
+    outline: auto;
+    outline-style:groove;
+    left: 50%;
+
+}
+
+.col11{width: calc(33.33% - 30px); margin: 0px 15px;
+    outline: auto;
+    outline-style:groove;
+    }
+    
+.col12
+{width: calc(66.66% - 30px); 
+margin: 0px 15px;
+background-color: white;
+outline: auto;
+outline-style: groove;
+outline-color: black;
+}
+
+.rowtext{
+    margin: 5px;
+    padding: 10px;
+    text-align: left;
+    font-family: 'Noto Sans KR';
+    font-weight: bold;
+    font-size: 15pt;
+}
+
+.rowtext2{
+    margin: 5px;
+    padding: 10px;
+    text-align: left;
+    font-family: 'Noto Sans KR';
+    font-weight: 900;
+    font-size: 25pt;
+    color: #00FF00;
+}
+
+.rowmaintext{
+    font-family: 'Noto sans KR';
+    font-size: 50pt;
+    margin: 10px;
+    padding: 0px;
+    text-align: left;
+
+}
+
+.section9{
+    width: 100%;
+    margin: 30px 75px;
+    
+}
+
+.section10{
+    width: 100%;
+    margin: 30px 75px;
+    align-items: center;
+}
+
+.section1{
+    width: 60%;
+    margin-left: 400px; /* content 섹션을 왼쪽으로 20px 떼어냅니다. */
+    background-color: rgb(255, 255, 255);
+    outline: auto;
+    margin: 75px;
+    margin-bottom: 0px; /* content 섹션을 왼쪽으로 20px 떼어냅니다. */
+}
+
+::selection {
+    color: rgb(0, 0, 0);
+    background: rgb(25, 255, 0); /* 드래그된 텍스트의 배경 색과 글자 색 */
+}
+
+.image-container {
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+
+.overlay-text {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: rgb(0, 0, 0);
+    font-size: 1.5em;
+    background-color: rgba(255, 255, 255, 0);
+    padding: 5px 10px;
+    font-family: 'Michroma';
+}
+
+.overlay-text2 {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: rgb(255, 252, 252);
+    text-align: left;
+    font-size: 40pt;
+    text-shadow: -3px 0px rgb(0, 0, 0), 0px 3px rgb(0, 0, 0), 3px 0px rgb(0, 0, 0), 0px -3px rgb(0, 0, 0);
+    background-color: rgba(255, 255, 255, 0);
+    padding: 5px 10px;
+    font-family: 'Noto Sans KR';
+    font-weight: bold;
+}
+
+.overlay-text3 {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: rgb(255, 252, 252);
+    font-size: 15pt;
+    text-shadow: -3px 0px rgb(0, 0, 0), 0px 3px rgb(0, 0, 0), 3px 0px rgb(0, 0, 0), 0px -3px rgb(0, 0, 0);
+    background-color: rgba(255, 255, 255, 0);
+    padding: 5px 10px;
+    text-align: left;
+    font-family: 'Noto Sans KR';
+    font-weight: bold;
+    top: 100px;
+}
+
+
+.button-group .btn {
+    margin-right: 10px;
+}
+
+#news-section {
+    margin-bottom: 20px;
+}
+
+.text1 {
+    margin: 10px;
+    font-size: 60px;
+    font-family: 'Noto sans KR';
+    font-weight:900
+}
+
+.text2 {
+    margin: 10px;
+    font-size: 35px;
+    font-family: 'Noto sans KR';
+}
+
+.text3 {
+    margin: 10px;
+    font-size: 55px;
+    font-family: 'Noto sans KR';
+    font-weight:900
+}
+
+.maintext {
+    font-family: 'michroma';
+}
+
+.manu {
+    font-family: 'michroma';
+}
+
+
+.section13{
+    width: 90%;
+    margin: 30px 75px;
+    display: flex;
+}
+
+#circle {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    opacity: 80%;
+    background-color: rgb(25, 255, 0);
+    border-radius: 50%;
+    pointer-events:none; /* 원이 클릭 이벤트를 차단하지 않도록 설정 */
+    z-index: 1000; /* 이미지보다 높은 z-index 설정 */
+    transition: transform 0.01s ease-out; /* 위치 변경을 부드럽게 만듦 */
+}
